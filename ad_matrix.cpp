@@ -6,7 +6,8 @@ using namespace std;
     graph representation
     ====================
 
-    Topic: Adjacency metrix
+    Topic: Adjacency matrix
+
 
     0 -----1
           /  \ 
@@ -16,11 +17,11 @@ using namespace std;
     # total edge = 4
     # undirected, unweighted
 
-    matrix -> no of nodes x no of nodes
+    matrix(2d array) -> no of nodes(rows) x no of nodes(cols)
            -> 4 x 4
 
     marix[i][j] = 1
-        if and only if (i -> j)
+        if and only if (i -> j) node i to node j can go directly
 
     0 -> 1
     1 -> 0
@@ -31,8 +32,12 @@ using namespace std;
     3 -> 1
     1 -> 3       
 
+    # complete graph 
+    # maximum num of edge in a graph -> node x node
 */
 
+// time complexity -> O(n^2)
+// space complexity -> O(n^2)
 
 int main()
 {
